@@ -59,7 +59,6 @@ body {
 #metadeDireita {
     height: 1000px;
     width: 50%;
-    background-color: blue;
     background-image: url(../imagens/img1.jpeg);
     background-size: cover;
     flex-direction: column;
@@ -105,23 +104,55 @@ body {
 
 #card1 h2{
     font-size: 50px;
-    background-color:#87CEEB;
-    max-width: 400px;
-    
+    margin-bottom: 30px;
 }
 
+#card2 h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
 
-/*#card2{
-    width: 40%;
-    height: 80%;
-    background-color: blue;
-    flex-direction: column;
-    margin: auto;
+h3{
+    font-size: 30px;
+}
+
+#card1 ul{
+    font-size: 25px;
+    margin: 15px 0px 0px 25px;
+}
+
+#card1 a{
+    font-size: 30px;
+    background-color: #87CEEB;
+    color: #FFFAFA;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 50%;
+    margin-left: 35%; 
+    display: inline-block;
     border-radius: 15px;
-}*/
+}
+
+#card2 a{
+    font-size: 30px;
+    background-color: #87CEEB;
+    color: #FFFAFA;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 60%;
+    margin-left: 40%; 
+    display: inline-block;
+    border-radius: 15px;
+}
+
+#card1 a:hover, #card2 a:hover{
+    padding: 20px;
+    background-color: #33b8ec;
+}
 
 footer {
-    background-color: #fc7012;
+    margin-top: 20px;
+    background-color: #87CEEB;
     height: 100px;
 }
 
@@ -193,6 +224,12 @@ footer p {
         margin: auto;
         margin-top: 25px;
         margin-bottom: 25px;
+        height: auto;
+    }
 
+    #card1 a, #card2 a{
+        margin-top: 40px;
+        margin-right: 10px;
+        margin-bottom: 15px;
     }
 }
