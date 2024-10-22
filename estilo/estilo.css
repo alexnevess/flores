@@ -217,6 +217,7 @@ footer p {
         border-radius: 15px;
         margin: auto;
         flex-direction: column;
+        height: auto;
     }
 
     #card1, #card2{
