@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Faz com que padding e bordas sejam incluídos no cálculo da largura */
+}
+
+body {
+    margin: 0;
+}
+
+#logo {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 300px;
+}
+
+#primeiraParte {
+    background-color: #FFFAFA;
+    height: 1000px;
+}
+
+#girassol {
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+}
+
+#girassol img {
+    width: 50%;
+}
+
+#segundaParte {
+    background-color: #FDF5E6;
+    display: flex;
+    /* Flex para organizar layout lado a lado */
+    flex-wrap: wrap;
+    /* Permite que as divs quebrem no mobile */
+    width: 100%;
+    /* Garante que a largura seja 100% da viewport */
+    height: 1000px;
+    overflow-x: hidden;
+    /* Para evitar rolagem horizontal */
+}
+
+#metadeEsquerda {
+    height: 1000px;
+    width: 50%;
+    flex-direction: column;
+}
+
+#conteudo {
+    max-width: 80%;
+    margin: auto;
+    font-size: 25px;
+    padding-top: 35%;
+}
+
+#metadeDireita {
+    height: 1000px;
+    width: 50%;
+    background-color: blue;
+    background-image: url(../imagens/img1.jpeg);
+    background-size: cover;
+    flex-direction: column;
+}
+
+#terceiraParte {
+    background-color: #FFFAFA;
+    height: 1000px;
+    text-align: center;
+}
+
+#terceiraParte img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 15px;
+}
+
+#terceiraParte h1 {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+#quartaParte {
+    background-color: #FDF5E6;
+    height: 1000px;
+    display: flex;
+}
+
+#card1, #card2{
+    width: 40%;
+    height: 80%;
+    /*background-color: red;*/
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+    padding: 30px 0 0 50px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#card1:hover,#card2:hover{
+    background-color: #f8ecd6;
+}
+
+#card1 h2{
+    font-size: 50px;
+    background-color:#87CEEB;
+    max-width: 400px;
+    
+}
+
+
+/*#card2{
+    width: 40%;
+    height: 80%;
+    background-color: blue;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+}*/
+
+footer {
+    background-color: #fc7012;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media(max-width: 600px) {
+
+    #primeiraParte {
+        height: 80vw;
+    }
+
+    #girassol img {
+        width: 50%;
+    }
+
+    #segundaParte {
+        flex-direction: column;
+        /* Empilha as divs no mobile */
+        width: 90vw;
+        border-radius: 15px;
+        margin: auto;
+        /* Garante 100% da largura da viewport no mobile */
+        height: auto;
+        /* Ajusta a altura conforme o conteúdo */
+    }
+
+    #metadeEsquerda {
+        width: 100%;
+        height: auto;
+    }
+
+    #conteudo {
+        padding: 30px;
+        font-size: 15px;
+    }
+
+    #metadeDireita {
+        width: 100%;
+        /* Ocupa 100% da largura no mobile */
+        height: 500px;
+    }
+
+    #terceiraParte {
+        height: auto;
+    }
+
+    #terceiraParte img {
+        margin-top: 15vw;
+        width: 90%;
+    }
+
+    #terceiraParte h1 {
+        margin: 0 0 15vw;
+        padding: 0;
+    }
+
+    #quartaParte{
+        width: 90vw;
+        border-radius: 15px;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #card1, #card2{
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+}
